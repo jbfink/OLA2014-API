@@ -1,0 +1,11 @@
+[{
+  "type": "/film/film_character",
+  "name": "Jason Voorhees",
+  "portrayed_in_films": [{
+    "film": null
+  }]
+}]
+
+curl "https://www.googleapis.com/freebase/v1/mqlread/?lang=%2Flang%2Fen&query=%5B%7B+%22type%22%3A+%22%2Ffilm%2Ffilm_character%22%2C+%22name%22%3A+%22Jason+Voorhees%22%2C+%22portrayed_in_films%22%3A+%5B%7B+%22film%22%3A+null+%7D%5D+%7D%5D" | jq "."
+# unique on result
+curl "https://www.googleapis.com/freebase/v1/mqlread/?lang=%2Flang%2Fen&query=%5B%7B+%22type%22%3A+%22%2Ffilm%2Ffilm_character%22%2C+%22name%22%3A+%22Jason+Voorhees%22%2C+%22portrayed_in_films%22%3A+%5B%7B+%22film%22%3A+null+%7D%5D+%7D%5D" | jq '.result[].portrayed_in_films'  | jq 'unique'

@@ -1,0 +1,61 @@
+{
+"result": [
+{
+"type": "/film/film_character", 
+"name": "Jason Voorhees", 
+"portrayed_in_films": [
+{
+"film": "Friday the 13th"
+}, 
+{
+"film": "Freddy vs. Jason"
+}, 
+{
+"film": "Friday the 13th Part 2 (3D)"
+}, 
+{
+"film": "Friday the 13th"
+}, 
+{
+"film": "Jason X"
+}, 
+{
+"film": "Friday the 13th Part VII: The New Blood"
+}, 
+{
+"film": "Friday the 13th Part VII: The New Blood"
+}, 
+{
+"film": "Friday the 13th Part VII: The New Blood"
+}, 
+{
+"film": "Friday the 13th Part 3: 3D"
+}, 
+{
+"film": "Friday the 13th Part 3: 3D"
+}, 
+{
+"film": "Friday the 13th Part 2"
+}, 
+{
+"film": "Friday the 13th Part 2"
+}, 
+{
+"film": "Friday the 13th: A New Beginning"
+}, 
+{
+"film": "Friday the 13th: A New Beginning"
+}, 
+{
+"film": "Friday the 13th Part VI: Jason Lives"
+}, 
+{
+"film": "Friday the 13th Part VIII: Jason Takes Manhattan"
+}, 
+{
+"film": "Friday the 13th Part VIII: Jason Takes Manhattan"
+}
+]
+}
+]
+}
