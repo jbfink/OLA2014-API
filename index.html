@@ -165,7 +165,48 @@
 				<p>One API, three uses</p>
 				</section>
 					<section>
-						Place Holder of JSON
+					<h3>When are you open until?</h3>
+					</section>
+					<section>
+					<p>Like say, on Halloween...</p>
+					<img src="images/halloween.jpg" />
+					<p>(I'm trying my best here people)</p>
+					</section>
+					<section>
+					<ul>
+					<li>Needed some easy way to display what hours we were open</li>
+					<li>Wanted to make it easy to re-use this information</li>
+					<li>Made an in-house API that spits out hours in JSON</li>
+					</ul>
+					</section>
+					<section>
+					<p>Can open this in any browser</p>
+					<pre><code>http://library.brocku.ca/hours/?format=json&date=2013-10-31&location=rhd</code></pre>
+					</section>
+					<section>
+					<pre><code>{
+	"location_name":"Help Desk",
+	"location_key":"rhd",
+	"schedule_name":"Fall Term",
+	"start_date":"2013-09-03",
+	"end_date":"2014-01-05",
+	"sun_open":"12:00:00",
+	"sun_close":"17:00:00",
+	"mon_open":"08:30:00",
+	"mon_close":"19:00:00",
+	"tue_open":"08:30:00",
+	"tue_close":"19:00:00",
+	"wed_open":"08:30:00",
+	"wed_close":"19:00:00",
+	"thu_open":"08:30:00",
+	"thu_close":"19:00:00",
+	"fri_open":"08:30:00",
+	"fri_close":"17:00:00",
+	"sat_open":"12:00:00",
+	"sat_close":"17:00:00",
+	"id":"28"
+}</code></pre>
+					
 					</section>
 					<section>
 						<img src="images/api_r_2.png"/>
