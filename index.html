@@ -59,29 +59,29 @@
 					<section>
 					<h3>Why APIs matter to the web</h3>
 					<ul>
-					<li>They are the <em>lingua franca</em> of the Internet</li>
-					<li>Ensure that communication can happen between different sites and different versions</li>
-					<li>Provide a consistent reliable way for information to be delivered</li>
-					<li>They abstract some of the complications of the underlying technologies</li>
+					<li class=fragment>They are the <em>lingua franca</em> of the Internet</li>
+					<li class=fragment>Ensure that communication can happen between different sites and different versions</li>
+					<li class=fragment>Provide a consistent reliable way for information to be delivered</li>
+					<li class=fragment>They abstract some of the complications of the underlying technologies</li>
 					</ul>
 					</section>
 					<section>
-					<ul>
 					<h3>Why in the Library?</h3>
-					<li>Provides an unencumbered interchange of data</li>
-					<li>Perfect example, a union catalogue based on MARC</li>
-					<li>ILL just wouldn't be possible without an underlying API</li>
-					<li>Copy Cataloguing would be difficult as well</li>
+					<ul>
+					<li class=fragment>Provides an unencumbered interchange of data</li>
+					<li class=fragment>Perfect example, a union catalogue based on MARC</li>
+					<li class=fragment>ILL just wouldn't be possible without an underlying API</li>
+					<li class=fragment>Copy Cataloguing would be difficult as well</li>
 					</ul>
 					</section>
 					<section>
 					<h3>Where it could of helped</h3>
 					<ul>
-					<li>Imagine if every database vendor provided an API?</li>
-					<li>You could make your own Google Scholar</li>
-					<li>Google Scholar exists because the web is more or less recognizable as an API</li>
-					<li>Without ubiquity of web we'd just have: AOL Online, Prodigy, Compuserve, etc</li>
-					<li>Your Gmail message wouldn't get to your Yahoo Grandma</li>
+					<li class=fragment>Imagine if every database vendor provided an API?</li>
+					<li class=fragment>You could make your own Google Scholar</li>
+					<li class=fragment>Google Scholar exists because the web is more or less recognizable as an API</li>
+					<li class=fragment>Without ubiquity of web we'd just have: AOL Online, Prodigy, Compuserve, etc</li>
+					<li class=fragment>Your Gmail message wouldn't get to your Yahoo Grandma</li>
 					</ul>
 					</section>
 				</section>
@@ -172,14 +172,69 @@ curl --silent "http://www.omdbapi.com/?i=&t=Jason+X" | jq '.Director'
 					<p>Digital Public Library of America</p>
 					</section>
 					<section>
-					<p>intro to api</p>
+					<a href="http://dp.la/info/developers/codex/"><img src="images/dpla_1.png" /></a>
 					</section>
 					<section>
-					<p>Demo of DPLA API</p>
+					<p>Request an API key, then you are good to go</p>
+<pre><code>
+curl -v -XPOST http://api.dp.la/v2/api_key/YOUR_EMAIL@example.com
+</code></pre>			
 					</section>
 					<section>
-					<p>Demo of DPLA API</p>
+					<h3>Oodles of ways to interact</h3>
+<pre><code>
+http://api.dp.la/v2/items?q=Frankenstein&api_key=4c39detc
+</code></pre>
+					<p>keyword search for Frankenstein</p>
+					
 					</section>
+					<section>
+					<h3>Oodles of ways to interact</h3>
+<pre><code>
+http://api.dp.la/v2/items?sourceResource.temporal.end=1923-01-01&api_key=4c39detc
+</code></pre>
+					<p>items from before 1923</p>		
+					</section>
+					<section>
+					<img src="images/dpla_2.png" />
+					</section>
+					<section>
+<pre><code>
+{"media":
+{"#text":"http://npgportraits.si.edu/eMuseumNPG/media/CSC/9100132c.jpg",
+ "@idsId":"http://npgportraits.si.edu/eMuseumNPG/media/CSC/9100132c.jpg",
+ "@thumbnail":"http://npgportraits.si.edu/eMuseumNPG/media/CSC/9100132c.jpg",
+ "@type":"Images"},
+ "@mediaCount":"1"}
+</code></pre>
+					<p>URL of the actual image file</p>
+					</section>
+					<section>
+<pre><code>
+"subject":
+[{"name":"Motion pictures"},
+{"name":"Boris Karloff"},
+{"name":"Performing Arts"},
+{"name":"Performer"},
+{"name":"Actor"},
+{"name":"Theater"},
+{"name":"Actors and actresses"},
+{"name":"Entertainers"},
+{"name":"Portraits"},
+{"name":"Freulich, Roman"},
+{"name":"Karloff, Boris"},
+{"name":"Portrait"},
+{"name":"Movie"}]
+</code></pre>
+					<p>Subjects tagged in the record</p>
+					</section>
+					
+				<section>
+					
+				<a href="http://inkdroid.org/dpla-map/"><img src="images/dpla_3.png" /></a>
+				<p>Time to make Apps!</p>
+				
+				</section>
 				</section>
 
 				<!-- yeah kind outthere but go with me -->
