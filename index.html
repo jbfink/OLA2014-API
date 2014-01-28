@@ -149,7 +149,15 @@
 }
 </code></pre>
 				</section>
-
+				<section>
+				<h3>If we get data like this we can pull out information in a *programmatic* way...</h3>
+				</section>
+				<section>
+<pre><code>
+curl --silent "http://www.omdbapi.com/?i=&t=Jason+X" | jq '.Director'
+"James Isaac"
+</code></pre>
+				</section>
 				<section>
 				<img src="images/Jason_real.jpg">
 				</section>
