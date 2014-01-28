@@ -211,6 +211,7 @@ http://api.dp.la/v2/items?sourceResource.temporal.end=1923-01-01&api_key=4c39det
 					</section>
 					<section>
 <pre><code>
+{
 "subject":
 [{"name":"Motion pictures"},
 {"name":"Boris Karloff"},
@@ -244,26 +245,29 @@ http://api.dp.la/v2/items?sourceResource.temporal.end=1923-01-01&api_key=4c39det
 				<p>One API, three uses</p>
 				</section>
 					<section>
-					<h3>When are you open until?</h3>
-					</section>
-					<section>
-					<p>Like say, on Halloween...</p>
-					<img src="images/halloween.jpg" />
-					<p>(I'm trying my best here people)</p>
+
+					<ul>
+					<li class=fragment>When are you open util?</li>
+					<li class=fragment>...On Halloween<br/><img src="images/halloween.jpg" /></li>
+					<li class=fragment>(I'm trying my best here people)</li>
+					</ul>
 					</section>
 					<section>
 					<ul>
-					<li>Needed some easy way to display what hours we were open</li>
-					<li>Wanted to make it easy to re-use this information</li>
-					<li>Made an in-house API that spits out hours in JSON</li>
+					<li class=fragment>Needed some easy way to display what hours we were open</li>
+					<li class=fragment>Wanted to make it easy to re-use this information</li>
+					<li class=fragment>Made an in-house API that spits out hours in JSON</li>
 					</ul>
 					</section>
 					<section>
 					<p>Can open this in any browser</p>
-					<pre><code>http://library.brocku.ca/hours/?format=json&date=2013-10-31&location=rhd</code></pre>
+<pre><code>
+http://library.brocku.ca/hours/?format=json&date=2013-10-31&location=rhd
+</code></pre>
 					</section>
 					<section>
-					<pre><code>{
+<pre><code>
+{
 	"location_name":"Help Desk",
 	"location_key":"rhd",
 	"schedule_name":"Fall Term",
@@ -284,7 +288,8 @@ http://api.dp.la/v2/items?sourceResource.temporal.end=1923-01-01&api_key=4c39det
 	"sat_open":"12:00:00",
 	"sat_close":"17:00:00",
 	"id":"28"
-}</code></pre>
+}
+</code></pre>
 					
 					</section>
 					<section>
@@ -311,18 +316,20 @@ http://api.dp.la/v2/items?sourceResource.temporal.end=1923-01-01&api_key=4c39det
 					<p>Screen scraping happens</p>
 					</section>
 					<section>
+					<h3>Screen Scraping</h3>
 					<ul>
-					<li>Systematically extracting text from a webpage</li>
-					<li>A very fickle business at best</li>
-					<li>Tools exist that help with the process</li>
+					<li class=fragment>True nightmare on Elm Street</li>
+					<li class=fragment>Systematically extracting text from a webpage</li>
+					<li class=fragment>A very fickle business at best</li>
+					<li class=fragment>Tools exist that help with the process</li>
 					</ul>
 					</section>
 					<section>
-					<h3>Beautiful Soup</h3>
+					<h3><a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a></h3>
 					<ul>
-					<li>Software package that downloads a webpage</li>
-					<li>It then organizes the HTML by tag</li>
-					<li><a href="http://www.crummy.com/software/BeautifulSoup/">(Link)</a></li>
+					<li class=fragment>Software package that downloads a webpage</li>
+					<li class=fragment>It then organizes the HTML by tag</li>
+					<li class=fragment>You can then traverse the data, sorta</li>
 					</ul>
 					</section>
 					<section>
